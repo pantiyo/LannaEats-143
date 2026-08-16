@@ -5,96 +5,111 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Lanna Eats | อาหารเหนือ</title>
+<title>Lanna Eats</title>
 
 <style>
 
 *{
-box-sizing:border-box;
 margin:0;
 padding:0;
-font-family:"Tahoma",sans-serif;
+box-sizing:border-box;
+font-family:tahoma,sans-serif;
 }
 
 body{
-background:#fff8e8;
-color:#3b2a1f;
+background:#fff8e9;
+color:#34451d;
 }
 
+
+/* HEADER */
 
 header{
-background:#405c22;
+height:90px;
+background:#314b19;
 color:white;
-padding:20px 50px;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
+padding:0 60px;
 }
 
-
 .logo{
-font-size:32px;
+font-size:35px;
 font-weight:bold;
+color:#f2c14e;
 }
 
 
 nav a{
 color:white;
+margin:20px;
 text-decoration:none;
-margin-left:25px;
+font-size:18px;
 }
 
 
+/* HERO */
 
 .hero{
 
 display:flex;
+justify-content:space-between;
 align-items:center;
-justify-content:space-around;
-padding:70px 50px;
+padding:70px 80px;
+
+background:
+linear-gradient(#fff8e9,#fff2d3);
 
 }
 
 
-.hero-text h1{
+.hero h1{
 
-font-size:65px;
-color:#405c22;
-
-}
-
-
-.hero-text span{
-
-color:#d89b2b;
+font-size:70px;
 
 }
 
 
-.hero-text p{
+.hero span{
 
-font-size:20px;
-margin-top:20px;
+color:#d99b22;
+
+}
+
+
+.hero p{
+
+font-size:22px;
+margin:30px 0;
+
+}
+
+
+.btn{
+
+background:#314b19;
+color:white;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
 
 }
 
 
 .hero img{
 
-width:420px;
-height:420px;
+width:500px;
+height:500px;
 object-fit:cover;
 border-radius:50%;
 
-animation:float 3s infinite;
-
-box-shadow:0 20px 40px #0004;
+animation:move 3s infinite;
 
 }
 
 
-
-@keyframes float{
+@keyframes move{
 
 50%{
 transform:translateY(-20px);
@@ -104,6 +119,8 @@ transform:translateY(-20px);
 
 
 
+/* MENU */
+
 
 .menu{
 
@@ -112,24 +129,21 @@ padding:60px;
 }
 
 
-
-.menu h2{
+.title{
 
 text-align:center;
 font-size:45px;
-color:#405c22;
 margin-bottom:40px;
 
 }
 
 
 
-
-.grid{
+.cards{
 
 display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
+grid-template-columns:repeat(5,1fr);
+gap:25px;
 
 }
 
@@ -140,7 +154,7 @@ gap:30px;
 background:white;
 border-radius:25px;
 overflow:hidden;
-box-shadow:0 10px 30px #0002;
+box-shadow:0 10px 25px #0002;
 
 }
 
@@ -149,7 +163,7 @@ box-shadow:0 10px 30px #0002;
 .card img{
 
 width:100%;
-height:250px;
+height:220px;
 object-fit:cover;
 
 }
@@ -158,16 +172,16 @@ object-fit:cover;
 
 .card h3{
 
-padding:20px 20px 10px;
-font-size:25px;
-color:#70401f;
+text-align:center;
+font-size:24px;
+margin:15px;
 
 }
 
 
 .card p{
 
-padding:0 20px;
+text-align:center;
 
 }
 
@@ -175,20 +189,22 @@ padding:0 20px;
 .price{
 
 display:block;
-padding:20px;
+text-align:center;
+color:#d99b22;
 font-size:25px;
-color:#d89b2b;
 font-weight:bold;
+padding:15px;
 
 }
 
 
 
-
+/* BRANCH */
 
 .branch{
 
-background:#f2dfb4;
+background:#314b19;
+color:white;
 padding:50px;
 text-align:center;
 
@@ -197,11 +213,10 @@ text-align:center;
 
 .branch h2{
 
-font-size:40px;
-color:#405c22;
+font-size:45px;
+color:#f2c14e;
 
 }
-
 
 
 .branch p{
@@ -213,9 +228,11 @@ margin:15px;
 
 
 
+/* FOOTER */
+
 footer{
 
-background:#405c22;
+background:#1f3010;
 color:white;
 text-align:center;
 padding:30px;
@@ -223,9 +240,7 @@ padding:30px;
 }
 
 
-
-
-@media(max-width:800px){
+@media(max-width:900px){
 
 .hero{
 
@@ -233,22 +248,13 @@ flex-direction:column;
 
 }
 
-
-.grid{
+.cards{
 
 grid-template-columns:1fr;
 
 }
 
-
-.hero-text h1{
-
-font-size:45px;
-
 }
-
-}
-
 
 </style>
 
@@ -267,8 +273,10 @@ LANNA EATS
 
 <nav>
 
-<a href="#menu">เมนู</a>
-<a href="#branch">สาขา</a>
+<a href="#">หน้าหลัก</a>
+<a href="#">เมนูอาหาร</a>
+<a href="#">สาขา</a>
+<a href="#">ติดต่อ</a>
 
 </nav>
 
@@ -280,13 +288,10 @@ LANNA EATS
 <section class="hero">
 
 
-<div class="hero-text">
-
+<div>
 
 <h1>
-
 ข้าวซอยเนื้อ
-
 <br>
 
 <span>
@@ -297,16 +302,20 @@ LANNA EATS
 
 
 <p>
-หอมเครื่องแกงเข้มข้น
+หอมเครื่องแกงเข้มข้น<br>
 เนื้อนุ่ม เส้นกรอบแบบล้านนาแท้
 </p>
 
 
+<a class="btn">
+สั่งอาหาร
+</a>
+
 </div>
 
 
 
-<img src="beef.jpg">
+<img src="IMG_5619.jpeg">
 
 
 </section>
@@ -315,119 +324,60 @@ LANNA EATS
 
 
 
+<section class="menu">
 
-<section class="menu" id="menu">
 
-
-<h2>
+<h2 class="title">
 เมนูแนะนำ
 </h2>
 
 
-<div class="grid">
+
+<div class="cards">
 
 
 
 <div class="card">
-
-<img src="beef.jpg">
-
-<h3>
-ข้าวซอยเนื้อ
-</h3>
-
-<p>
-ข้าวซอยน้ำแกงเข้มข้น เนื้อนุ่ม
-</p>
-
-<span class="price">
-65 บาท
-</span>
-
+<img src="IMG_5619.jpeg">
+<h3>ข้าวซอยเนื้อ</h3>
+<p>สูตรเมืองเหนือ</p>
+<span class="price">65 บาท</span>
 </div>
 
 
 
-
 <div class="card">
-
-<img src="chicken.jpg">
-
-<h3>
-ข้าวซอยไก่
-</h3>
-
-<p>
-สูตรเหนือแท้ หอมเครื่องแกง
-</p>
-
-<span class="price">
-55 บาท
-</span>
-
+<img src="IMG_5760.jpeg">
+<h3>ข้าวซอยไก่</h3>
+<p>หอมเครื่องแกง</p>
+<span class="price">55 บาท</span>
 </div>
 
 
 
-
 <div class="card">
-
-<img src="ngiew.jpg">
-
-<h3>
-น้ำเงี้ยวหมู
-</h3>
-
-<p>
-น้ำซุปเข้มข้นแบบล้านนา
-</p>
-
-<span class="price">
-50 บาท
-</span>
-
+<img src="IMG_5620.jpeg">
+<h3>น้ำเงี้ยวหมู</h3>
+<p>เข้มข้นแบบล้านนา</p>
+<span class="price">50 บาท</span>
 </div>
 
 
 
-
 <div class="card">
-
-<img src="orange.jpg">
-
-<h3>
-ส้มสด
-</h3>
-
-<p>
-หวานอมเปรี้ยว สดชื่น
-</p>
-
-<span class="price">
-25 บาท
-</span>
-
+<img src="IMG_5761.jpeg">
+<h3>ส้มสด</h3>
+<p>หวานสดชื่น</p>
+<span class="price">25 บาท</span>
 </div>
 
 
 
-
 <div class="card">
-
-<img src="tea.jpg">
-
-<h3>
-ชาเย็น
-</h3>
-
-<p>
-ชาไทยหอมเข้ม หวานมัน
-</p>
-
-<span class="price">
-30 บาท
-</span>
-
+<img src="IMG_5764.jpeg">
+<h3>ชาเย็น</h3>
+<p>ชาไทยหอมเข้ม</p>
+<span class="price">30 บาท</span>
 </div>
 
 
@@ -440,11 +390,10 @@ LANNA EATS
 
 
 
-<section class="branch" id="branch">
-
+<section class="branch">
 
 <h2>
-สาขา
+สาขาของเรา
 </h2>
 
 
@@ -452,26 +401,22 @@ LANNA EATS
 01 สาขาช้างคลาน
 </p>
 
-
 <p>
 02 สาขานิมมาน
 </p>
-
 
 <p>
 03 สาขาเมืองเก่า
 </p>
 
 
-
 </section>
-
 
 
 
 <footer>
 
-Lanna Eats  
+LANNA EATS
 <br>
 อาหารเหนือเชียงใหม่
 
@@ -481,4 +426,3 @@ Lanna Eats
 
 </body>
 </html>
-
