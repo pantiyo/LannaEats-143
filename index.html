@@ -4,9 +4,10 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>LANNA EATS | อาหารเหนือเชียงใหม่</title>
+<title>Lanna Eats</title>
 
 
 <style>
@@ -21,10 +22,10 @@ font-family:"Tahoma",sans-serif;
 
 :root{
 
---green:#183b17;
---gold:#d9a52e;
---cream:#fff6e5;
---brown:#6b3c1e;
+--green:#1d4018;
+--gold:#d79a27;
+--cream:#fff7e8;
+--brown:#6b351c;
 
 }
 
@@ -33,6 +34,7 @@ font-family:"Tahoma",sans-serif;
 body{
 
 background:var(--cream);
+
 color:#333;
 
 }
@@ -41,17 +43,10 @@ color:#333;
 
 /* HEADER */
 
+
 header{
 
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-height:75px;
+height:80px;
 
 background:white;
 
@@ -61,11 +56,17 @@ align-items:center;
 
 justify-content:space-between;
 
-padding:0 6%;
+padding:0 5%;
 
-z-index:100;
+position:fixed;
 
-box-shadow:0 5px 20px #0002;
+top:0;
+
+width:100%;
+
+z-index:99;
+
+box-shadow:0 3px 15px #0002;
 
 }
 
@@ -75,9 +76,9 @@ box-shadow:0 5px 20px #0002;
 
 font-size:28px;
 
-font-weight:900;
+font-weight:bold;
 
-color:var(--green);
+color:var(--brown);
 
 }
 
@@ -93,11 +94,11 @@ color:var(--gold);
 
 nav a{
 
+margin-left:25px;
+
 text-decoration:none;
 
 color:#333;
-
-margin-left:25px;
 
 font-weight:bold;
 
@@ -116,15 +117,17 @@ background:
 
 linear-gradient(
 90deg,
-rgba(0,0,0,.65),
-rgba(0,0,0,.2)
+rgba(0,0,0,.55),
+rgba(0,0,0,.15)
 ),
 
 url("hero.jpg");
 
+
 background-size:cover;
 
 background-position:center;
+
 
 display:flex;
 
@@ -132,40 +135,17 @@ align-items:center;
 
 padding:0 7%;
 
+
 color:white;
 
+
 }
 
 
 
-
-.hero-box{
+.hero-content{
 
 max-width:600px;
-
-animation:up 1s ease;
-
-}
-
-
-
-@keyframes up{
-
-from{
-
-opacity:0;
-
-transform:translateY(40px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:none;
-
-}
 
 }
 
@@ -173,7 +153,7 @@ transform:none;
 
 .hero h1{
 
-font-size:clamp(45px,7vw,85px);
+font-size:clamp(45px,7vw,80px);
 
 line-height:1.1;
 
@@ -183,7 +163,7 @@ line-height:1.1;
 
 .hero h1 span{
 
-color:#e5b33b;
+color:#e5ad32;
 
 }
 
@@ -193,58 +173,31 @@ color:#e5b33b;
 
 font-size:22px;
 
-line-height:1.7;
-
 margin:25px 0;
 
-}
-
-
-
-
-.buttons{
-
-display:flex;
-
-gap:15px;
+line-height:1.6;
 
 }
-
 
 
 
 .btn{
 
+display:inline-block;
+
 padding:15px 35px;
 
 border-radius:40px;
-
-font-weight:bold;
-
-text-decoration:none;
-
-}
-
-
-
-.btn-main{
 
 background:var(--green);
 
 color:white;
 
-}
+text-decoration:none;
 
-
-
-.btn-light{
-
-background:white;
-
-color:#333;
+font-weight:bold;
 
 }
-
 
 
 
@@ -258,7 +211,6 @@ display:none;
 }
 
 
-
 .hero{
 
 height:90vh;
@@ -268,22 +220,12 @@ padding:0 25px;
 }
 
 
-
 .hero p{
 
 font-size:17px;
 
 }
 
-
-
-.buttons{
-
-flex-direction:column;
-
-width:220px;
-
-}
 
 }
 
@@ -309,17 +251,11 @@ LANNA <span>EATS</span>
 
 <nav>
 
-<a href="#menu">
-เมนู
-</a>
+<a href="#menu">เมนู</a>
 
-<a href="#branch">
-สาขา
-</a>
+<a href="#branch">สาขา</a>
 
-<a href="#contact">
-ติดต่อ
-</a>
+<a href="#contact">ติดต่อ</a>
 
 
 </nav>
@@ -329,10 +265,11 @@ LANNA <span>EATS</span>
 
 
 
+
 <section class="hero">
 
 
-<div class="hero-box">
+<div class="hero-content">
 
 
 <h1>
@@ -351,107 +288,71 @@ LANNA <span>EATS</span>
 
 <p>
 
-เนื้อนุ่ม น้ำแกงเข้มข้น  
-เส้นกรอบแบบล้านนาแท้
+หอมเครื่องแกงเข้มข้น<br>
+เนื้อนุ่ม เส้นกรอบแบบล้านนาแท้
 
 </p>
 
 
-
-<div class="buttons">
-
-
-<a class="btn btn-main">
+<a class="btn">
 
 🛵 สั่งอาหาร
 
 </a>
 
 
-<a class="btn btn-light">
-
-🍜 ดูเมนู
-
-</a>
-
-
-</div>
-
-
 </div>
 
 
 </section>
 
-<!-- MENU -->
+<!-- MENU SECTION -->
+
 
 <section id="menu" class="menu">
 
 
 <h2>
-เมนูแนะนำ
+เมนูยอดนิยมของร้าน
 </h2>
 
 
-<div class="menu-list">
+<p class="sub">
 
+อาหารเหนือและเครื่องดื่มในราคาสบายกระเป๋า
 
-<div class="menu-card">
-
-<img src="IMG_5619.jpeg">
-
-<div>
-
-<h3>
-ข้าวซอยเนื้อ
-</h3>
-
-<p>
-เนื้อนุ่ม น้ำแกงเข้มข้น
 </p>
 
-<b>
-65 บาท
-</b>
-
-</div>
 
 
-<button>
-🛒
-</button>
-
-
-</div>
+<div class="food-grid">
 
 
 
+<div class="card">
 
-<div class="menu-card">
+
+<div class="img-box">
 
 <img src="IMG_5760.jpeg">
 
-<div>
+<span>
+55 บาท
+</span>
+
+</div>
+
 
 <h3>
 ข้าวซอยไก่
 </h3>
 
+
 <p>
-หอมเครื่องแกงล้านนา
+น้ำแกงเข้มข้น หอมเครื่องแกง
+เสิร์ฟพร้อมไก่นุ่มและเส้นกรอบ
 </p>
 
-<b>
-55 บาท
-</b>
-
-</div>
-
-
-<button>
-🛒
-</button>
-
 
 </div>
 
@@ -459,31 +360,61 @@ LANNA <span>EATS</span>
 
 
 
-<div class="menu-card">
+<div class="card">
+
+
+<div class="img-box">
+
+<img src="IMG_5619.jpeg">
+
+<span>
+65 บาท
+</span>
+
+</div>
+
+
+<h3>
+ข้าวซอยเนื้อ
+</h3>
+
+
+<p>
+เนื้อนุ่มเต็มคำ น้ำแกงรสกลมกล่อม
+สูตรลับเมืองเหนือ
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<div class="img-box">
 
 <img src="IMG_5620.jpeg">
 
-<div>
+<span>
+50 บาท
+</span>
+
+</div>
+
 
 <h3>
-ขนมจีนน้ำเงี้ยวหมู
+ขนมจีนน้ำเงี้ยว
 </h3>
 
+
 <p>
-รสเข้มข้นแบบเหนือ
+เข้มข้นแบบล้านนา
+หอมเครื่องเทศพื้นเมือง
 </p>
 
-<b>
-50 บาท
-</b>
-
-</div>
-
-
-<button>
-🛒
-</button>
-
 
 </div>
 
@@ -491,31 +422,29 @@ LANNA <span>EATS</span>
 
 
 
-<div class="menu-card">
+<div class="card">
+
+
+<div class="img-box">
 
 <img src="IMG_5761.jpeg">
 
-<div>
+<span>
+25 บาท
+</span>
+
+</div>
+
 
 <h3>
 ส้มสด
 </h3>
 
+
 <p>
-หวานอมเปรี้ยว สดชื่น
+หวานสดชื่น ดื่มง่าย
 </p>
 
-<b>
-25 บาท
-</b>
-
-</div>
-
-
-<button>
-🛒
-</button>
-
 
 </div>
 
@@ -523,29 +452,60 @@ LANNA <span>EATS</span>
 
 
 
-<div class="menu-card">
+<div class="card">
+
+
+<div class="img-box">
 
 <img src="IMG_5764.jpeg">
 
-<div>
+<span>
+30 บาท
+</span>
+
+</div>
+
 
 <h3>
 ชาเย็น
 </h3>
 
+
 <p>
 ชาไทยหอมเข้ม
+หวานกำลังดี
 </p>
 
-<b>
-30 บาท
-</b>
 
 </div>
 
 
+
+
+
+<div class="delivery">
+
+
+<h3>
+
+รับประทานที่ร้าน<br>
+และเดลิเวอรี่
+
+</h3>
+
+
+<p>
+
+สั่งผ่าน LINE<br>
+Grab และ LINE MAN
+
+</p>
+
+
 <button>
-🛒
+
+สั่งเลย
+
 </button>
 
 
@@ -557,6 +517,7 @@ LANNA <span>EATS</span>
 
 
 </section>
+
 
 
 
@@ -574,14 +535,14 @@ LANNA <span>EATS</span>
 </h2>
 
 
-<div class="branch-box">
+<div class="branch-list">
 
 
 <div>
 
-<h3>
+<b>
 01
-</h3>
+</b>
 
 <p>
 สาขาช้างคลาน
@@ -592,9 +553,9 @@ LANNA <span>EATS</span>
 
 <div>
 
-<h3>
+<b>
 02
-</h3>
+</b>
 
 <p>
 สาขานิมมาน
@@ -603,19 +564,17 @@ LANNA <span>EATS</span>
 </div>
 
 
-
 <div>
 
-<h3>
+<b>
 03
-</h3>
+</b>
 
 <p>
 สาขาเมืองเก่า
 </p>
 
 </div>
-
 
 
 </div>
@@ -635,33 +594,21 @@ LANNA <span>EATS</span>
 
 
 <h2>
-สั่งอาหาร
+สั่งอาหารง่าย ๆ
 </h2>
 
 
-<div class="contact-list">
-
-
 <div>
-☎️
-<br>
-โทรศัพท์
-</div>
 
+☎️ โทรศัพท์
 
-<div>
-💬
-<br>
-LINE
-</div>
+&nbsp;&nbsp;
 
+🟢 LINE
 
-<div>
-🛵
-<br>
-Grab / LINE MAN
-</div>
+&nbsp;&nbsp;
 
+🛵 Grab
 
 </div>
 
@@ -673,21 +620,9 @@ Grab / LINE MAN
 
 
 
-<!-- FLOAT BUTTON -->
-
-
-<a class="float-btn">
-
-🛒 สั่งอาหาร
-
-</a>
-
-
-
-
-
 
 <footer>
+
 
 <h2>
 LANNA EATS
@@ -700,12 +635,11 @@ LANNA EATS
 
 
 <p>
-© 2026 Lanna Eats
+© 2026
 </p>
 
 
 </footer>
-
 
 
 
@@ -717,7 +651,7 @@ LANNA EATS
 
 .menu{
 
-padding:80px 6%;
+padding:80px 5%;
 
 }
 
@@ -731,93 +665,15 @@ font-size:45px;
 
 color:var(--green);
 
-margin-bottom:40px;
-
 }
 
 
 
-.menu-list{
+.sub{
 
-max-width:850px;
+text-align:center;
 
-margin:auto;
-
-display:flex;
-
-flex-direction:column;
-
-gap:18px;
-
-}
-
-
-
-.menu-card{
-
-background:white;
-
-border-radius:25px;
-
-padding:12px;
-
-display:flex;
-
-align-items:center;
-
-gap:20px;
-
-box-shadow:0 12px 30px #0002;
-
-transition:.3s;
-
-}
-
-
-
-.menu-card:hover{
-
-transform:translateY(-5px);
-
-}
-
-
-
-.menu-card img{
-
-width:140px;
-
-height:100px;
-
-object-fit:contain;
-
-border-radius:15px;
-
-background:white;
-
-}
-
-
-
-.menu-card div{
-
-flex:1;
-
-}
-
-
-
-.menu-card h3{
-
-font-size:24px;
-
-color:var(--brown);
-
-}
-
-
-
-.menu-card p{
+margin:20px;
 
 color:#777;
 
@@ -825,29 +681,130 @@ color:#777;
 
 
 
-.menu-card b{
+.food-grid{
 
-color:var(--gold);
+display:grid;
 
-font-size:22px;
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+max-width:1200px;
+
+margin:auto;
 
 }
 
 
 
-.menu-card button{
+.card{
 
-width:45px;
+background:white;
 
-height:45px;
+border-radius:25px;
 
-border:0;
+overflow:hidden;
 
-border-radius:50%;
+box-shadow:0 10px 30px #0002;
+
+}
+
+
+
+.img-box{
+
+height:260px;
+
+position:relative;
+
+}
+
+
+
+.img-box img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+
+
+.img-box span{
+
+position:absolute;
+
+right:15px;
+
+bottom:15px;
+
+background:#6b351c;
+
+color:white;
+
+padding:12px 20px;
+
+border-radius:30px;
+
+font-weight:bold;
+
+}
+
+
+
+.card h3{
+
+font-size:25px;
+
+color:var(--brown);
+
+padding:20px 20px 5px;
+
+}
+
+
+
+.card p{
+
+padding:0 20px 25px;
+
+color:#777;
+
+line-height:1.5;
+
+}
+
+
+
+
+.delivery{
+
+background:#ead6b2;
+
+border-radius:25px;
+
+padding:30px;
+
+}
+
+
+
+.delivery button{
+
+margin-top:20px;
 
 background:var(--green);
 
 color:white;
+
+border:0;
+
+padding:12px 35px;
+
+border-radius:30px;
 
 }
 
@@ -861,7 +818,7 @@ background:var(--green);
 
 color:white;
 
-padding:70px 6%;
+padding:70px 5%;
 
 text-align:center;
 
@@ -871,43 +828,29 @@ text-align:center;
 
 .branch h2{
 
-font-size:40px;
-
 color:var(--gold);
 
-}
-
-
-
-.branch-box{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:25px;
-
-margin-top:40px;
+font-size:40px;
 
 }
 
 
 
-.branch-box div{
+.branch-list{
 
-background:white;
+display:flex;
 
-color:#333;
+justify-content:center;
 
-padding:30px;
+gap:50px;
 
-border-radius:25px;
+margin-top:35px;
 
 }
 
 
 
-.branch-box h3{
+.branch-list b{
 
 font-size:35px;
 
@@ -917,77 +860,13 @@ color:var(--gold);
 
 
 
-
-
 .contact{
-
-padding:60px 6%;
 
 text-align:center;
 
-}
+padding:50px;
 
-
-
-.contact h2{
-
-font-size:40px;
-
-color:var(--green);
-
-}
-
-
-
-.contact-list{
-
-display:flex;
-
-justify-content:center;
-
-gap:25px;
-
-margin-top:30px;
-
-}
-
-
-
-.contact-list div{
-
-background:white;
-
-padding:25px;
-
-border-radius:20px;
-
-box-shadow:0 10px 20px #0002;
-
-}
-
-
-
-
-
-.float-btn{
-
-position:fixed;
-
-right:20px;
-
-bottom:20px;
-
-background:var(--green);
-
-color:white;
-
-padding:16px 25px;
-
-border-radius:40px;
-
-font-weight:bold;
-
-z-index:99;
+font-size:20px;
 
 }
 
@@ -995,7 +874,7 @@ z-index:99;
 
 footer{
 
-background:#10270c;
+background:#10250c;
 
 color:white;
 
@@ -1017,37 +896,33 @@ color:var(--gold);
 
 
 
-@media(max-width:700px){
+@media(max-width:800px){
 
 
-.menu-card img{
-
-width:100px;
-
-height:80px;
-
-}
-
-
-.menu-card h3{
-
-font-size:18px;
-
-}
-
-
-.branch-box{
+.food-grid{
 
 grid-template-columns:1fr;
 
 }
 
 
-.contact-list{
+
+.branch-list{
 
 flex-direction:column;
 
+gap:20px;
+
 }
+
+
+
+.img-box{
+
+height:230px;
+
+}
+
 
 
 }
