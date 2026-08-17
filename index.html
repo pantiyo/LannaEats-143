@@ -4,9 +4,11 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Lanna Eats</title>
+
 
 <style>
 
@@ -14,21 +16,26 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Tahoma, sans-serif;
+font-family:"Tahoma",sans-serif;
 }
 
 
 :root{
+
 --green:#173d12;
---gold:#d99b27;
+--gold:#d89b27;
 --cream:#fff7e8;
 --brown:#6b351c;
+
 }
 
 
 body{
+
 background:var(--cream);
+
 color:#333;
+
 }
 
 
@@ -38,29 +45,36 @@ color:#333;
 header{
 
 height:80px;
-background:white;
+
+background:#fff;
 
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
 
 padding:0 6%;
 
 position:fixed;
+
 top:0;
+
 width:100%;
 
-z-index:100;
+z-index:10;
 
-box-shadow:0 3px 15px #0002;
+box-shadow:0 5px 20px #0002;
 
 }
 
 
 .logo{
 
-font-size:28px;
+font-size:30px;
+
 font-weight:bold;
+
 color:#55301b;
 
 }
@@ -73,16 +87,18 @@ color:var(--gold);
 }
 
 
+
 nav a{
 
 text-decoration:none;
+
 color:#333;
-margin-left:30px;
+
+margin-left:25px;
+
 font-weight:bold;
 
 }
-
-
 
 
 
@@ -93,25 +109,32 @@ font-weight:bold;
 
 height:100vh;
 
+
 background:
 
 linear-gradient(
 90deg,
-rgba(0,0,0,.45),
+rgba(0,0,0,.55),
 rgba(0,0,0,.15)
 ),
 
-url("IMG_5765.jpeg");
+url("FAD3C1CC-5825-4771-AE47-F8B8A4672584.png");
+
 
 background-size:cover;
 
+
 background-position:center;
+
 
 display:flex;
 
+
 align-items:center;
 
+
 padding:0 7%;
+
 
 color:white;
 
@@ -140,7 +163,7 @@ line-height:1.1;
 
 .hero h1 span{
 
-color:#e4ad35;
+color:#e5ad32;
 
 }
 
@@ -158,15 +181,13 @@ margin:25px 0;
 
 
 
-.btn{
-
-display:inline-block;
-
-padding:15px 35px;
+.button{
 
 background:var(--green);
 
 color:white;
+
+padding:15px 35px;
 
 border-radius:40px;
 
@@ -179,9 +200,6 @@ font-weight:bold;
 
 
 
-/* MOBILE */
-
-
 @media(max-width:700px){
 
 nav{
@@ -191,7 +209,6 @@ display:none;
 
 .hero{
 
-height:90vh;
 padding:25px;
 
 }
@@ -203,16 +220,17 @@ font-size:17px;
 
 }
 
-
 }
 
 
 </style>
 
+
 </head>
 
 
 <body>
+
 
 
 <header>
@@ -225,13 +243,16 @@ LANNA <span>EATS</span>
 <nav>
 
 <a href="#menu">เมนู</a>
+
 <a href="#branch">สาขา</a>
+
 <a href="#contact">ติดต่อ</a>
 
 </nav>
 
 
 </header>
+
 
 
 
@@ -263,7 +284,7 @@ LANNA <span>EATS</span>
 </p>
 
 
-<a class="btn">
+<a class="button">
 🛵 สั่งอาหาร
 </a>
 
@@ -277,7 +298,9 @@ LANNA <span>EATS</span>
 
 <section id="menu" class="menu">
 
-<h2>เมนูยอดนิยมของร้าน</h2>
+<h2>
+เมนูยอดนิยมของร้าน
+</h2>
 
 <p class="subtitle">
 อาหารเหนือและเครื่องดื่มในราคาสบายกระเป๋า
@@ -309,7 +332,6 @@ LANNA <span>EATS</span>
 
 
 
-
 <div class="food-card">
 
 <img src="IMG_5619.jpeg">
@@ -324,11 +346,10 @@ LANNA <span>EATS</span>
 
 <p>
 เนื้อนุ่มเต็มคำ
-น้ำแกงกลมกล่อม สูตรเมืองเหนือ
+สูตรลับเมืองเหนือ
 </p>
 
 </div>
-
 
 
 
@@ -402,6 +423,7 @@ LANNA <span>EATS</span>
 
 <div class="delivery-card">
 
+
 <img src="IMG_5766.jpeg">
 
 
@@ -434,6 +456,7 @@ Grab และ LINE MAN
 
 
 
+
 <!-- BRANCH -->
 
 <section id="branch" class="branch">
@@ -442,7 +465,6 @@ Grab และ LINE MAN
 <h2>
 สาขาของเรา
 </h2>
-
 
 
 <div class="branch-grid">
@@ -460,13 +482,12 @@ Grab และ LINE MAN
 
 <p>
 อ.เมืองเชียงใหม่<br>
-จ.เชียงใหม่ 50100
+เชียงใหม่
 </p>
 
 <p>
 🕙 10:30 - 21:30 น.
 </p>
-
 
 <button>
 ดูแผนที่
@@ -495,7 +516,6 @@ Grab และ LINE MAN
 🕙 10:30 - 21:30 น.
 </p>
 
-
 <button>
 ดูแผนที่
 </button>
@@ -523,7 +543,6 @@ Grab และ LINE MAN
 🕙 10:30 - 21:30 น.
 </p>
 
-
 <button>
 ดูแผนที่
 </button>
@@ -541,8 +560,6 @@ Grab และ LINE MAN
 
 
 
-<!-- CONTACT -->
-
 
 <section id="contact" class="contact">
 
@@ -552,19 +569,11 @@ Grab และ LINE MAN
 </h2>
 
 
-<div class="contact-list">
-
-☎️ โทรศัพท์
-
-&nbsp;&nbsp;
-
-🟢 LINE
-
-&nbsp;&nbsp;
-
+<p>
+☎️ โทรศัพท์ &nbsp;&nbsp;
+🟢 LINE &nbsp;&nbsp;
 🛵 Grab
-
-</div>
+</p>
 
 
 </section>
@@ -592,6 +601,7 @@ LANNA EATS
 
 
 </footer>
+
 
 
 
@@ -680,9 +690,9 @@ object-fit:cover;
 
 position:absolute;
 
-top:210px;
-
 right:15px;
+
+top:210px;
 
 background:#6b351c;
 
@@ -690,7 +700,7 @@ color:white;
 
 padding:10px 18px;
 
-border-radius:25px;
+border-radius:30px;
 
 }
 
@@ -714,23 +724,18 @@ padding:0 20px 25px;
 
 color:#777;
 
-line-height:1.5;
-
 }
-
 
 
 
 
 .delivery-card{
 
-background:#ecd8af;
+background:#ead7b0;
 
 border-radius:25px;
 
 overflow:hidden;
-
-padding-bottom:25px;
 
 text-align:center;
 
@@ -742,7 +747,7 @@ text-align:center;
 
 width:100%;
 
-height:200px;
+height:220px;
 
 object-fit:cover;
 
@@ -771,6 +776,8 @@ border:0;
 padding:12px 35px;
 
 border-radius:30px;
+
+margin-bottom:25px;
 
 }
 
@@ -816,11 +823,11 @@ margin-top:40px;
 
 .branch-box{
 
-background:#fff7e8;
+background:var(--cream);
+
+padding:35px 20px;
 
 border-radius:25px;
-
-padding:30px;
 
 }
 
@@ -830,9 +837,9 @@ padding:30px;
 
 font-size:45px;
 
-font-weight:bold;
-
 color:var(--gold);
+
+font-weight:bold;
 
 }
 
@@ -856,13 +863,11 @@ color:white;
 
 border:0;
 
-padding:10px 30px;
+padding:12px 30px;
 
 border-radius:30px;
 
 }
-
-
 
 
 
@@ -871,14 +876,6 @@ border-radius:30px;
 text-align:center;
 
 padding:50px;
-
-}
-
-
-
-.contact h2{
-
-margin-bottom:20px;
 
 }
 
@@ -906,8 +903,8 @@ color:var(--gold);
 
 
 
-@media(max-width:800px){
 
+@media(max-width:800px){
 
 .menu-grid{
 
@@ -926,9 +923,7 @@ grid-template-columns:1fr;
 }
 
 
-
 </style>
-
 
 
 </body>
